@@ -1,0 +1,95 @@
+CommandLine
+- dirmk nameFolder: tạo Thư muck mới
+- cd.. : quay trở lại thư mục trước
+- cd : di chuyển đến thư mục
+- pwd : Lấy đường dẫn hiện tại
+- echo something - text file > NameFile.xxx: Tạo file với nội dung something text
+- touch nameFile.xxx: Tạo file
+- dir : hiên thị toàn bộ thư mục, tập thư trong thư muc hiên tại
+- dir -al : hiện thị toàn bộ thư mục và tập tin và tập tin ẩn trong thư mục hiện tại
+- dir -ls/ l : Hiện thị toàn bộ file và các quyền của file
+- rm fileName.txt : Xóa file or rm -rf FileName : xóa file mạnh hơn :)))
+- Clear: Xóa hết câu lệnh đã thực thi
+- vi fileName: Mở file 
+	+ i : edit file
+	+ :x : Save và thoát file
+- nano FileName : đọc file
+	+ Ctrl + Phím tắt help để sư dụng( Ctrl + o) Lưu
+
+git
+- git status: Kiểm tra trạng thái
+- git init : kéo thư mục .git về thành local chứa rp
+- git ls-files: dánh sách các file đang được theo dõi
+- git commit - m"" : đẩy lên kho lưu trữ git
+- git add fileName or (.) : Add vào staging area : khu vực tổ chức chuẩn bị cho bước commit tiếp theo (.): all tất cả
+- git log : danh sách thông tin(id, thời) các dư liệu được đây lên kho lưu trữ
+- git show : hiển thị thông tin chi tiết cung từng tập tin được commit( nôi dung...)'
+- git commit -am : cập nhât 
+- git config --global user.name "": Config userName của tài khoản github 
+- git config --global user.gmail "" : config gmail tài khoản github
+- git reset HEAD fileName : reset lại File đã thêm vào khu vực tổ chức( Khi add vào reset khôi phục về trạng thái chưa add và staging are)
+- get checkout -- fileName : restore file về dữ liệu trước đó. (Khôi phục)
+- git help log: danh sách các câu lệnh có thể sử dụng
+- git log --online : Cung cấp commit đơn giản hóa nhiểu thông tin trên một dòng thay vì nhiều dòng
+	+ -- graph : sẽ cung cấp biểu đồ dựa trên dấu hoa thị biểu thị hệ thống phân cấp phân nhánh
+	+ -- decorate: Sẽ nói chúng ta biết commmit là một phần của nhánh nào(branch) và các nhãn khác trong git
+	+ -- all: sẽ cung cấp lịch sử cho tất cả các chi nhánh có sẵn trong kho lưu trữ này.
+- git config global --alias.NameAlias: Tạo bí danh 
+- git config global --list : Chúng ta có thể kiểm tra kỹ mục nhập này bằng cách liệt kê các mục nhập cấu hình của Git;
+- git hist(Bí danh đã lịch sử) -- NameFile : Thông tin commit của file
+- git mv FileName(Old).xxx FileName(New).xxx: Đổi tên file old to new
+- git rm FileName : xóa file -> commit lại
+- git add -u: u viết tắt từ Update
+- git add -A : Vừa  cập nhật và add 
+-  .gitignore: Bỏ qua các tập tin không muốn add và staging are ( Name.Kiểu muốn bỏ of *.kiểu muốn bỏ qua)
+- git diff : hiển thị những thay đổi đã thực hiện mà chưa add or commit
+- git branch : Branch hiện tại
+- git branch -a : hiển thị tất cả chi nhánh
+- git checkout -b NameBrach : tạo chi nhanh mới và chuyển sang chi nhánh đó
+- git diff NameBrach namebranch : cho phép truyền tên branch thay vì id(cho ta thấy những gì khác biệt)
+- git checkout NameBrach: Chuyền sang nhánh(branch) NameBranch 
+- git merge NameBranch: Hợp nhất nhánh gốc hiện tại với nhanh NameBrach
+- git branch -d nameBranch : Xóa NameBrach
+- git reset HEAD id --soft/ mixed / hard : 
+	+ hard : mọi thây đổi sẽ bị xóa sạch, HEAD sẽ nằm tại vị trí ID
+	+ soft: tượng tự sao lưu dữ liệu
+
+- 2 chi nhanh cùng update -> file -> merge thì không thể xác nhập vì không biết lấy bản nào -> cat fileName: xuất ra nội dung của file
+* git mergetool: mở ra hộp hợp nhất 3 chiều chọn data muốn lấy và save
+Cấu hình p4merger
+- git config --global diff.tool p4merge
+-git config --global difftool.p4merge.path 'C:\Program Files\Perforce\p4merge.exe' 
+
+- Tag : Đánh dấu dấu điểm trong kho lưu trữ bằng một số cột mốc
+- git tag nameTag: Tạo Tag
+- git tag --list: danh sách các tag
+- git tag -d NameTag: Xóa NameTag
+- git tag -a NameTag -m"message": thẻ tag chú thích
+- git show NameTag: hiển thị thông tin chi tiết
+- git reflog :Hiện thị tất cả hành động đã thực hiện trong kho lưu trữ này
+
+stash: Lưu quá trình làm việc
+- git stash: lưu HEAD và commit cuối cùng nhánh hiện tại(WIP on master)
+- git stash list: hiện thị danh sách đã lưu quá trình làm việc
+- git stash pop : 2 hành động một lúc apply -> drop( apply : chấp bất cứ thứ gi stash cuối cùng đưa thay đổi trở lại điểm stash)
+	+ drop : bỏ những stash đã được app dụng (xóa luôn cái stash)
+	
+- Kết nối tới git remote (repository)
+- git remote: quản lý tất cả các kết nối từ xa từ kho lưu trữ cục bộ hiện tại của chúng tôi đến một điều khiển từ xa hoặc một kho lưu trữ khác ở đâu đó trên internet
+- git remote -v: dánh sách Remote 
+- git remote add: 
+	* add có 2 tham số 
+	+ Tên của remote tham chiếu chúng ta muốn tạo (origin)
+	+ URL: URL đầy đủ đến kho lưu trữ từ xa,là URL tới kho GitHub của tôi.
+- git push -u nameRemote nameBranch --tags : 
+	+ -u thiết lập mối quan hệ giữ nhánh theo dõi giữ nhánh master trong kho lưu trữ cục bộ(repository)
+	+ nameRemote : Tên kho lữu trữ từ xa(origin)
+	+ nameBranch: Tên chi nhánh muốn đẩy lên
+	+ --tags: để gửi tất cả các tag mà chúng tôi hiện có trong kho Git của chúng tôi cho đến GitHub.
+Bash
+- touch NameFile : Tạo file 
+- rm NameFile : Xóa File (cái này xóa bên ngoài git)
+
+Note:
+- Thây đổi file bên ngoài git cần phải git add - u: để cập nhật và sau đó tạo với git bình thương
+ 
