@@ -87,10 +87,21 @@ stash: Lưu quá trình làm việc
 	+ nameBranch: Tên chi nhánh muốn đẩy lên
 	+ --tags: để gửi tất cả các tag mà chúng tôi hiện có trong kho Git của chúng tôi cho đến GitHub.
 - git remote set-url [url] : chuyển repository sang reposotory URL
+
+- mkdir .ssh : Tạo ssh
+- Công cụ ssh -keygen: ssh -keygen -t rsa - C "Email"
+- ssh -T git.github.com : Kết nối ssh với github ( Bằng ssh key)
 Bash
 - touch NameFile : Tạo file 
 - rm NameFile : Xóa File (cái này xóa bên ngoài git)
 
 Note:
-- Thây đổi file bên ngoài git cần phải git add - u: để cập nhật và sau đó tạo với git bình thương
+- Thây đổi file bên ngoài git cần phải git add - u: để cập nhật và sau đó tạo với git bình thường
+
+
+*************************************************
+* Xử lý trên kho lưu trữ từ xa (REMOTE)
+-
+
+
  
