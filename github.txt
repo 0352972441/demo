@@ -86,6 +86,7 @@ stash: Lưu quá trình làm việc
 	+ nameRemote : Tên kho lữu trữ từ xa(origin)
 	+ nameBranch: Tên chi nhánh muốn đẩy lên
 	+ --tags: để gửi tất cả các tag mà chúng tôi hiện có trong kho Git của chúng tôi cho đến GitHub.
+- git remote set-url [url] : chuyển repository sang reposotory URL
 Bash
 - touch NameFile : Tạo file 
 - rm NameFile : Xóa File (cái này xóa bên ngoài git)
