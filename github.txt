@@ -94,3 +94,6 @@ Bash
 Note:
 - Thây đổi file bên ngoài git cần phải git add - u: để cập nhật và sau đó tạo với git bình thương
  
+***********************
+Xứ lý Kho lưu trữ từ xa
+re -rf NameReposiroty : Xóa repositoy 
