@@ -96,4 +96,5 @@ Note:
  
 ***********************
 Xứ lý Kho lưu trữ từ xa
-re -rf NameReposiroty : Xóa repositoy 
+- re -rf NameReposiroty : Xóa repositoy 
+- git clone Link ssh(Mặc đinh tên foder clone là tên reposity) NameForder Chỉ đinh: 
