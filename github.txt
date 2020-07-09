@@ -96,6 +96,7 @@ Bash
 - rm NameFile : Xóa File (cái này xóa bên ngoài git)
 
 Note:
+<<<<<<< HEAD
 - Thây đổi file bên ngoài git cần phải git add - u: để cập nhật và sau đó tạo với git bình thường
 
 
@@ -105,3 +106,15 @@ Note:
 
 
  
+=======
+- Thây đổi file bên ngoài git cần phải git add - u: để cập nhật và sau đó tạo với git bình thương
+ 
+***********************
+Xứ lý Kho lưu trữ từ xa
+- re -rf NameReposiroty : Xóa repositoy 
+- git clone Link ssh(Mặc đinh tên foder clone là tên reposity) NameForder Chỉ đinh: 
+- git config --global push.default simple: Đặt branch mặc định
+- git fecth : Tìm nạp Câp nhật những thây đổi github về local(K phá hủy)
+- git pull : Cập nhât thây đổi gitbub về local và (Tìm nạp và hợp nhất)cơ hội để điều này thất bại dưới dạng xung đột hợp nhất,có thể là một lệnh phá hoại
+nếu bạn có những thay đổi không tương thích với những gì hiện có trên GitHub.
+>>>>>>> bc25b94f6c71c9f91e560d234c86ae3663eddc07
