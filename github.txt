@@ -118,4 +118,4 @@ Xứ lý Kho lưu trữ từ xa
 - git fecth : Tìm nạp Câp nhật những thây đổi github về local(K phá hủy)
 - git pull : Cập nhât thây đổi gitbub về local và (Tìm nạp và hợp nhất)cơ hội để điều này thất bại dưới dạng xung đột hợp nhất,có thể là một lệnh phá hoại
 nếu bạn có những thay đổi không tương thích với những gì hiện có trên GitHub.
->>>>>>> bc25b94f6c71c9f91e560d234c86ae3663eddc07
+
