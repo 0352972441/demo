@@ -111,6 +111,7 @@ Note:
  
 ***********************
 Xứ lý Kho lưu trữ từ xa
+- git remote set-url origin [url]: Cập nhật lại repository
 - re -rf NameReposiroty : Xóa repositoy 
 - git clone Link ssh(Mặc đinh tên foder clone là tên reposity) NameForder Chỉ đinh: 
 - git config --global push.default simple: Đặt branch mặc định
