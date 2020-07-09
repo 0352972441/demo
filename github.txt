@@ -98,3 +98,7 @@ Note:
 Xứ lý Kho lưu trữ từ xa
 - re -rf NameReposiroty : Xóa repositoy 
 - git clone Link ssh(Mặc đinh tên foder clone là tên reposity) NameForder Chỉ đinh: 
+- git config --global push.default simple: Đặt branch mặc định
+- git fecth : Tìm nạp Câp nhật những thây đổi github về local(K phá hủy)
+- git pullCập nhât thây đổi gitbub về local và (Tìm nạp và hợp nhất)cơ hội để điều này thất bại dưới dạng xung đột hợp nhất,có thể là một lệnh phá hoại
+nếu bạn có những thay đổi không tương thích với những gì hiện có trên GitHub.
