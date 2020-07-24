@@ -119,3 +119,9 @@ Xứ lý Kho lưu trữ từ xa
 - git pull : Cập nhât thây đổi gitbub về local và (Tìm nạp và hợp nhất)cơ hội để điều này thất bại dưới dạng xung đột hợp nhất,có thể là một lệnh phá hoại
 nếu bạn có những thay đổi không tương thích với những gì hiện có trên GitHub.
 
+
+![Test Image (number)](URL): Thêm ảnh vào README.md
++(https://github.com/tograh/testrepository/3DTest.png)
++![Test Image 1](3DTest.png)
++![Test Image 6](master/3DTest.png)..
+- [![Alt text for your video](doc/gifName.gif)](https://www.youtube.com/watch?v=VIDEO-ID): nhúng video
