@@ -96,7 +96,10 @@ Bash
 - rm NameFile : Xóa File (cái này xóa bên ngoài git)
 
 - git push origin --delete remoteBranchName : Xóa branch trực tiếp trên rep
-
+-git rm --cached file1.txt : Xóa file trên rep
+git commit -m "remove file1.txt"
+git rm file1.txt : Xóa file local
+git commit -m "remove file1.txt"
 Note:
 <<<<<<< HEAD
 - Thây đổi file bên ngoài git cần phải git add - u: để cập nhật và sau đó tạo với git bình thường
