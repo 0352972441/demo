@@ -19,6 +19,8 @@ CommandLine
 git
 * Cấu hình SSH:
 	+ ssh-keygen -aưt rsa -b 4096 -C "Account" : Tạo SSH
+	+eval "$(ssh-agent)": Lấy agent
+	+ shh-add -K ~/.shh/id_rsa : Đăng ký SHH
 - git status: Kiểm tra trạng thái
 - git init : kéo thư mục .git về thành local chứa rp
 - git ls-files: dánh sách các file đang được theo dõi
