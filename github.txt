@@ -21,6 +21,8 @@ git
 	+ ssh-keygen -aưt rsa -b 4096 -C "Account" : Tạo SSH
 	+eval "$(ssh-agent)": Lấy agent
 	+ shh-add -K ~/.shh/id_rsa : Đăng ký SHH
+	+ cat ~/.ssh/id_rsa.pub : Get mã SSH add lên github
+	+ ssh -T git@github.com : Xác thực để để SHH hợp lệ chó phép push code
 - git status: Kiểm tra trạng thái
 - git init : kéo thư mục .git về thành local chứa rp
 - git ls-files: dánh sách các file đang được theo dõi
