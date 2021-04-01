@@ -15,8 +15,10 @@ CommandLine
 	+ :x : Save và thoát file
 - nano FileName : đọc file
 	+ Ctrl + Phím tắt help để sư dụng( Ctrl + o) Lưu
-
+- dir -a -l ~/ssh : Xem thông tin đầy đủ của ssh
 git
+* Cấu hình SSH:
+	+ ssh-keygen -aưt rsa -b 4096 -C "Account" : Tạo SSH
 - git status: Kiểm tra trạng thái
 - git init : kéo thư mục .git về thành local chứa rp
 - git ls-files: dánh sách các file đang được theo dõi
